@@ -8,7 +8,6 @@
 *.vcxproj.user
 *.vs
 *.elf
-.travis.yml
 .pioenvs
 .piolibdeps
 .vscode
