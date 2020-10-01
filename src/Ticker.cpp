@@ -1,22 +1,39 @@
 /**
- *  @file       Ticker.cpp
- *  @brief      Counter which checks timeout of project subjects.
- *  @author     JSC electronics
+ * @file       Ticker.cpp
+ * Project     Ticker
+ * @brief      A helper library to hide complexity of computing time differences in pseudo-multitasking projects
+ * @author     JSC electronics
+ * License     Apache-2.0 - Copyright (c) 2020 JSC electronics
+ *
+ * @section License
+ *
+ * Copyright (c) 2020 JSC electronics
+ *
+ * Licensed under the Apache License, Version 2.0 (the "License");
+ * you may not use this file except in compliance with the License.
+ * You may obtain a copy of the License at
+ *
+ *     https://www.apache.org/licenses/LICENSE-2.0
+ *
+ * Unless required by applicable law or agreed to in writing, software
+ * distributed under the License is distributed on an "AS IS" BASIS,
+ * WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+ * See the License for the specific language governing permissions and
+ * limitations under the License.
  */
 
 #include "Ticker.h"
 
-Ticker::Ticker(uint16_t tickerTime){
-    this->tickerTime = tickerTime;
+jsc::Ticker::Ticker(uint16_t tickerTime): tickerTime(tickerTime) {
 }
 
-uint16_t Ticker::perform(){
-    if(timeSamplingTriggered){
+uint16_t jsc::Ticker::perform() {
+    if (timeSamplingTriggered) {
         timeSample = millis();
         timeSamplingTriggered = false;
     }
 
-    if(timeSample + tickerTime < millis()){
+    if(timeSample + tickerTime < millis()) {
         counter++;
         timeSamplingTriggered = true;
     }
@@ -24,7 +41,7 @@ uint16_t Ticker::perform(){
     return counter;
 }
 
-void Ticker::clear(){
+void jsc::Ticker::clear() {
     counter = 0;
     timeSamplingTriggered = true;
     timeSample = 0;
