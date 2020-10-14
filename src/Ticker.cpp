@@ -24,7 +24,7 @@
 
 #include "Ticker.h"
 
-jsc::Ticker::Ticker(uint16_t tickerTime): tickerTime(tickerTime) {
+jsc::Ticker::Ticker(unsigned long tickerTime): tickerTime(tickerTime) {
 }
 
 uint16_t jsc::Ticker::perform() {

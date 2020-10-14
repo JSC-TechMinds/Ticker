@@ -39,7 +39,7 @@ namespace jsc {
          * Default constructor. You can specify a custom ticker period.
          * If it's not specified, <code>DEFAULT_TICKER_PERIOD_MS</code> will be used.
          */
-        Ticker(uint16_t tickerTime = DEFAULT_TICKER_PERIOD_MS);
+        Ticker(unsigned long tickerTime = DEFAULT_TICKER_PERIOD_MS);
 
         /**
          * Captures current time and tracks whether a time period has elapsed.
@@ -60,7 +60,7 @@ namespace jsc {
 
     private:
         /** Ticker period for one tick. After this value elapses, Ticker increments its counter.*/
-        uint16_t tickerTime;
+        unsigned long tickerTime;
         unsigned long timeSample = 0;
 
         /**
