@@ -1,0 +1,19 @@
+var NAVTREEINDEX0 =
+{
+"TickerBlinkV2_8ino-example.html":[4,1],
+"TickerBlink_8ino-example.html":[4,0],
+"Ticker_8cpp.html":[3,0,1,0],
+"Ticker_8cpp_source.html":[3,0,1,0],
+"Ticker_8h.html":[3,0,1,1],
+"Ticker_8h_source.html":[3,0,1,1],
+"Ticker__DoxygenMainPage_8h_source.html":[3,0,0,0],
+"dir_68267d1309a1af8e8297ef4c3efbcdba.html":[3,0,1],
+"dir_e68e8157741866f444e17edd764ebbae.html":[3,0,0],
+"examples.html":[4],
+"files.html":[3,0],
+"index.html":[],
+"index.html":[0],
+"md_CODE_OF_CONDUCT.html":[1],
+"md_CONTRIBUTING.html":[2],
+"pages.html":[]
+};
