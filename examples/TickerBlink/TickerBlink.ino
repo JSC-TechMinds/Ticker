@@ -37,8 +37,8 @@ void setup() {
 // the loop function runs over and over again forever
 void loop() {
   // Time has elapsed, turn on 
-  if (blinkTicker.perform() > 0) {
-    blinkTicker.clear();
+  if (blinkTicker.elapsedTicks() > 0) {
+    blinkTicker.restart();
     digitalWrite(LED_BUILTIN, !digitalRead(LED_BUILTIN));
   }
 }
