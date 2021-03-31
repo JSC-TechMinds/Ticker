@@ -24,25 +24,22 @@
 
 #include "Ticker.h"
 
-jsc::Ticker::Ticker(unsigned long tickerTime): tickerTime(tickerTime) {
+jsc::Ticker::Ticker(unsigned long periodMs) : singleTickMs(periodMs)
+{
+    timeSample = millis();
 }
 
-uint16_t jsc::Ticker::perform() {
-    if (timeSamplingTriggered) {
-        timeSample = millis();
-        timeSamplingTriggered = false;
-    }
-
-    if(timeSample + tickerTime < millis()) {
-        counter++;
-        timeSamplingTriggered = true;
-    }
-
-    return counter;
+unsigned long jsc::Ticker::elapsed()
+{
+    return millis() - timeSample;
 }
 
-void jsc::Ticker::clear() {
-    counter = 0;
-    timeSamplingTriggered = true;
-    timeSample = 0;
+uint16_t jsc::Ticker::elapsedTicks()
+{
+    return elapsed() / singleTickMs;
+}
+
+void jsc::Ticker::restart()
+{
+    timeSample = millis();
 }

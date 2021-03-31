@@ -21,11 +21,11 @@ void setup() {
 }
 
 void loop() {
-    if (ticker.perform() > 0) {
+    if (ticker.elapsedTicks() > 0) {
         // TODO: Trigger an event
 
         // Reset ticker
-        ticker.clear();
+        ticker.restart();
     }
 }
 ```
@@ -44,11 +44,11 @@ void setup() {
 
 void loop() {
 	// Trigger an event after five seconds
-    if (ticker.perform() > (5000 / 10)) {
+    if (ticker.elapsedTicks() > (5000 / 10)) {
         // TODO: Trigger an event
 
         // Reset ticker
-        ticker.clear();
+        ticker.restart();
     }
 }
 ```
@@ -61,9 +61,9 @@ void loop() {
 ## Contributing
 There are many ways in which you can participate in the project, for example:
 
-* [Submit bugs and feature requests](https://github.com/JSC-electronics/ObjectButton/issues), and help us verify as they are checked in
-* Review [source code changes](https://github.com/JSC-electronics/ObjectButton/pulls)
-* Review the [documentation](https://github.com/JSC-electronics/ObjectButton/wiki) and make pull requests for anything from typos to new content
+* [Submit bugs and feature requests](https://github.com/JSC-electronics/Ticker/issues), and help us verify as they are checked in
+* Review [source code changes](https://github.com/JSC-electronics/Ticker/pulls)
+* Review the [documentation](https://github.com/JSC-electronics/Ticker/wiki) and make pull requests for anything from typos to new content
 
 Please read [contributing rules](CONTRIBUTING.md) for more details.
 

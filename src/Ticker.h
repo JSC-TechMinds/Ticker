@@ -30,52 +30,35 @@
 #include <Arduino.h>
 
 namespace jsc {
-    /** Duration of a single tick */
-    constexpr static unsigned int DEFAULT_TICKER_PERIOD_MS = 10;
+    constexpr static unsigned int DEFAULT_TICK_PERIOD_MS = 10;
 
     class Ticker {
     public:
         /**
          * Default constructor. You can specify a custom ticker period.
-         * If it's not specified, <code>DEFAULT_TICKER_PERIOD_MS</code> will be used.
+         * If it's not specified, <code>DEFAULT_TICK_PERIOD_MS</code> will be used.
          */
-        Ticker(unsigned long tickerTime = DEFAULT_TICKER_PERIOD_MS);
+        Ticker(unsigned long singleTickMs = DEFAULT_TICK_PERIOD_MS);
 
         /**
-         * Captures current time and tracks whether a time period has elapsed.
-         * For example, if a ticker period is 10 ms, and 30 ms passed since first call
-         * to <code>Ticker#perform()</code>, this method captured three ticks, and returns 3.
+         * Calculate number of ticks since the Ticker was started.
+         * For example, if a ticker period is 10 ms, and 30 ms passed since start, 
+         * this method returns 3.
          * 
          * In most cases, however, you can specify the duration of a single tick, and once
          * this method returns a value greater than 0, you know that your defined period has passed.
          * 
          * @return number of ticks since the Ticker was started.
          */
-        uint16_t perform();
+        uint16_t elapsedTicks();
 
-        /**
-         * Reset Ticker to initial state
-         */
-        void clear();
+        unsigned long elapsed();
+
+        void restart();
 
     private:
-        /** Ticker period for one tick. After this value elapses, Ticker increments its counter.*/
-        unsigned long tickerTime;
+        unsigned long singleTickMs;
         unsigned long timeSample = 0;
-
-        /**
-         * Internal counter. It holds ticks since Ticker was first started,
-         * or since it was re-set by the <code>Ticker#clear()</code> method.
-         */
-        uint16_t counter = 0;
-
-        /**
-         * If it's set to <code>true</code>, Ticker will capture current time returned by <code>millis()</code>.
-         * Otherwise, Ticker will wait until the TICKER_PERIOD elapses, and increments the counter.
-         * 
-         * This variable is set up to <code>true</code> after Ticker initialization and after calling <code>Ticker#clear()</code>.
-         */
-        bool timeSamplingTriggered = true;
     };
 }
 

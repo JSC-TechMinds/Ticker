@@ -48,8 +48,8 @@ void setup() {
 void loop() {
   // Change LED state after one second
   // (expressed as a count of 10 ms intervals)
-  if (blinkTicker.perform() > (1000 / 10)) {
-    blinkTicker.clear();
+  if (blinkTicker.elapsedTicks() > (1000 / 10)) {
+    blinkTicker.restart();
     digitalWrite(LED_BUILTIN, !digitalRead(LED_BUILTIN));
   }
 }
