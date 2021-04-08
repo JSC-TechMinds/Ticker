@@ -69,7 +69,7 @@ Please read [contributing rules](CONTRIBUTING.md) for more details.
 
 ## License
 
-Copyright © 2020 JSC electronics. All rights reserved.
+Copyright © 2020-2021 JSC electronics. All rights reserved.
 
 Licensed under the [Apache-2.0](LICENSE) license.
 
