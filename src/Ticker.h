@@ -56,6 +56,11 @@ namespace jsc {
 
         void restart();
 
+        /**
+         * Set/update ticket period [in milliseconds].
+         */
+        void setTickerPeriod(unsigned long period);
+
     private:
         unsigned long singleTickMs;
         unsigned long timeSample = 0;

@@ -43,3 +43,7 @@ void jsc::Ticker::restart()
 {
     timeSample = millis();
 }
+
+void jsc::Ticker::setTickerPeriod(unsigned long period) {
+    singleTickMs = period;
+}
