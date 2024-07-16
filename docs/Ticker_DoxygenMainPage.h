@@ -4,7 +4,7 @@
  * See the documentation of the main class, Ticker, or browse the modules
  * and examples using the sidebar on the left.
  *
- * The latest development version is available on [GitHub](https://github.com/JSC-electronics/Ticker).
+ * The latest development version is available on [GitHub](https://github.com/JSC-TechMinds/Ticker).
  */
 
 /**

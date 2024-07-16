@@ -1,0 +1,28 @@
+name: PlatformIO CI
+on: [push]
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    strategy:
+      matrix:
+        example:
+          - examples/TickerBlink/TickerBlink.ino
+          - examples/TickerBlinkV2/TickerBlinkV2.ino
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/cache@v4
+        with:
+          path: |
+            ~/.cache/pip
+            ~/.platformio/.cache
+          key: ${{ runner.os }}-pio
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.12'
+      - name: Install PlatformIO Core
+        run: pip install --upgrade platformio
+      - name: Build PlatformIO examples
+        run: pio ci --lib "." --board=megaatmega2560 --board=esp32dev --board=esp01_1m
+        env:
+          PLATFORMIO_CI_SRC: ${{ matrix.example }}

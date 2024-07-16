@@ -2,12 +2,12 @@
  * @file       Ticker.h
  * Project     Ticker
  * @brief      A helper library to hide complexity of computing time differences in pseudo-multitasking projects
- * @author     JSC electronics
- * License     Apache-2.0 - Copyright (c) 2020 JSC electronics
+ * @author     JSC TechMinds
+ * License     Apache-2.0 - Copyright (c) 2020-2024 JSC TechMinds
  *
  * @section License
  *
- * Copyright (c) 2020 JSC electronics
+ * Copyright 2020-2024 JSC TechMinds
  *
  * Licensed under the Apache License, Version 2.0 (the "License");
  * you may not use this file except in compliance with the License.

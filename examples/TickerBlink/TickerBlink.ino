@@ -9,7 +9,7 @@
  * 
  * While Arduino is waiting, it can perform other tasks.
  * 
- * Copyright 2020 JSC electronics
+ * Copyright 2020-2024 JSC TechMinds
  *
  * Licensed under the Apache License, Version 2.0 (the "License");
  * you may not use this file except in compliance with the License.
@@ -26,6 +26,11 @@
 
 #include <Ticker.h>
 #define BLINK_PERIOD_MS 1000 // Blink once per second
+
+// Make sure the code builds.
+#ifndef LED_BUILTIN
+#define LED_BUILTIN 1
+#endif
 
 jsc::Ticker blinkTicker(BLINK_PERIOD_MS);
 

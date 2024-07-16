@@ -1,9 +1,9 @@
 # Ticker
-[![Arduino_CI](https://github.com/JSC-electronics/Ticker/actions/workflows/arduino_ci.yml/badge.svg)](https://github.com/JSC-electronics/Ticker/actions/workflows/arduino_ci.yml)
-[![Documentation](https://github.com/JSC-electronics/Ticker/actions/workflows/doxygen.yml/badge.svg)](https://github.com/JSC-electronics/Ticker/actions/workflows/doxygen.yml)
-[![License: Apache 2.0](https://img.shields.io/badge/license-Apache--2.0-green.svg)](https://github.com/JSC-electronics/Ticker/blob/master/LICENSE)
-[![GitHub release](https://img.shields.io/github/release/JSC-electronics/Ticker.svg?maxAge=3600)](https://github.com/JSC-electronics/Ticker/releases)
-[![JSC electronics](https://img.shields.io/badge/JSC-electronics-green.svg)](https://www.jsce.cz/)
+[![PlatformIO](https://github.com/JSC-TechMinds/Ticker/actions/workflows/platformio.yml/badge.svg)](https://github.com/JSC-TechMinds/Ticker/actions/workflows/platformio.yml)
+[![Documentation](https://github.com/JSC-TechMinds/Ticker/actions/workflows/doxygen.yml/badge.svg)](https://github.com/JSC-TechMinds/Ticker/actions/workflows/doxygen.yml)
+[![License: Apache 2.0](https://img.shields.io/badge/license-Apache--2.0-green.svg)](https://github.com/JSC-TechMinds/Ticker/blob/main/LICENSE)
+[![GitHub release](https://img.shields.io/github/release/JSC-TechMinds/Ticker.svg?maxAge=3600)](https://github.com/JSC-TechMinds/Ticker/releases)
+[![JSC TechMinds](https://img.shields.io/badge/JSC-TechMinds-green.svg)](https://www.jsctm.cz/)
 [![Donate](https://img.shields.io/badge/donate-PayPal-blueviolet.svg)](https://www.paypal.com/cgi-bin/webscr?cmd=_s-xclick&hosted_button_id=SESX9ABM7V8KA&source=url)
 
 Ticker is a helper library, which allows you to write non-blocking Arduino code without calls to `delay()`.
@@ -57,21 +57,21 @@ void loop() {
 
 ## Documentation
 - [GitHub Wiki][ticker-wiki]
-- [Extended Doxygen Documentation][object-button-doxygen]
+- [Extended Doxygen Documentation][ticker-doxygen]
 - [Examples](examples)
 
 ## Contributing
 There are many ways in which you can participate in the project, for example:
 
-* [Submit bugs and feature requests](https://github.com/JSC-electronics/Ticker/issues), and help us verify as they are checked in
-* Review [source code changes](https://github.com/JSC-electronics/Ticker/pulls)
-* Review the [documentation](https://github.com/JSC-electronics/Ticker/wiki) and make pull requests for anything from typos to new content
+* [Submit bugs and feature requests](https://github.com/JSC-TechMinds/Ticker/issues), and help us verify as they are checked in
+* Review [source code changes](https://github.com/JSC-TechMinds/Ticker/pulls)
+* Review the [documentation](https://github.com/JSC-TechMinds/Ticker/wiki) and make pull requests for anything from typos to new content
 
 Please read [contributing rules](CONTRIBUTING.md) for more details.
 
 ## License
 
-Copyright © 2020-2023 JSC electronics. All rights reserved.
+Copyright © 2020-2024 JSC TechMinds. All rights reserved.
 
 Licensed under the [Apache-2.0](LICENSE) license.
 
@@ -82,5 +82,5 @@ We hope our library helped to speed up your project development. You can support
 [![paypal](https://www.paypalobjects.com/en_US/i/btn/btn_donateCC_LG.gif)](https://www.paypal.com/cgi-bin/webscr?cmd=_s-xclick&hosted_button_id=SESX9ABM7V8KA&source=url)
 
 [//]: # (Used references)
-[ticker-wiki]: https://github.com/JSC-electronics/Ticker/wiki
-[object-button-doxygen]: https://jsc-electronics.github.io/Ticker
+[ticker-wiki]: https://github.com/JSC-TechMinds/Ticker/wiki
+[ticker-doxygen]: https://JSC-TechMinds.github.io/Ticker

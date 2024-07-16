@@ -19,7 +19,7 @@
  * In this case, after Ticker returns counter value >= 100, we know
  * that the time has elapsed.
  * 
- * Copyright 2020 JSC electronics
+ * Copyright 2020-2024 JSC TechMinds
  *
  * Licensed under the Apache License, Version 2.0 (the "License");
  * you may not use this file except in compliance with the License.
@@ -35,6 +35,11 @@
  */
 
 #include <Ticker.h>
+
+// Make sure the code builds.
+#ifndef LED_BUILTIN
+#define LED_BUILTIN 1
+#endif
 
 // Increment counter each 10 ms
 jsc::Ticker blinkTicker;
