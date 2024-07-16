@@ -1,6 +1,8 @@
 var searchData=
 [
-  ['ticker_20arduino_20library_0',['Ticker Arduino Library',['../index.html',1,'']]],
-  ['ticker_2ecpp_1',['Ticker.cpp',['../Ticker_8cpp.html',1,'']]],
-  ['ticker_2eh_2',['Ticker.h',['../Ticker_8h.html',1,'']]]
+  ['code_20of_20conduct_0',['Contributor Covenant Code of Conduct',['../md_CODE__OF__CONDUCT.html',1,'']]],
+  ['conduct_1',['Contributor Covenant Code of Conduct',['../md_CODE__OF__CONDUCT.html',1,'']]],
+  ['contributing_20rules_2',['Contributing Rules',['../md_CONTRIBUTING.html',1,'']]],
+  ['contributor_20covenant_20code_20of_20conduct_3',['Contributor Covenant Code of Conduct',['../md_CODE__OF__CONDUCT.html',1,'']]],
+  ['covenant_20code_20of_20conduct_4',['Contributor Covenant Code of Conduct',['../md_CODE__OF__CONDUCT.html',1,'']]]
 ];

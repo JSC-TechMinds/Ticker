@@ -26,7 +26,7 @@ var NAVTREE =
 [
   [ "Ticker", "index.html", [
     [ "Ticker Arduino Library", "index.html", null ],
-    [ "Contributor Covenant Code of Conduct", "md_CODE_OF_CONDUCT.html", null ],
+    [ "Contributor Covenant Code of Conduct", "md_CODE__OF__CONDUCT.html", null ],
     [ "Contributing Rules", "md_CONTRIBUTING.html", null ],
     [ "Files", "files.html", [
       [ "File List", "files.html", "files_dup" ]
