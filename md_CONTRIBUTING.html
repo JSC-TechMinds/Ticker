@@ -96,7 +96,7 @@ $(document).ready(function(){initNavTree('md_CONTRIBUTING.html',''); initResizab
 <h1>Issues</h1>
 <ul>
 <li>Do you need help or have a question about using Arduino? Support requests should be made to the appropriate section of the <a href="http://forum.arduino.cc">Arduino forum</a> rather than an issue report. <b>Issue reports are to be used to report bugs or make feature requests only.</b></li>
-<li>Search <a href="https://github.com/JSC-electronics/Ticker/issues?q=">existing pull requests and issues</a> to be sure it hasn't already been reported. If you have additional information to provide about an existing issue then please comment on that issue.</li>
+<li>Search <a href="https://github.com/JSC-TechMinds/Ticker/issues?q=">existing pull requests and issues</a> to be sure it hasn't already been reported. If you have additional information to provide about an existing issue then please comment on that issue.</li>
 <li>State the newest version of the Arduino IDE you have verified the issue with and which operating system you are using.</li>
 <li>If you are using this library on PlatformIO, report version of PlatformIO Core and which operating system you are using.</li>
 <li>The issue title should be concise yet descriptive. Vague titles make it difficult to know the purpose of the issue when looking through the list of reports and may cause your issue to not be given proper attention.</li>
@@ -107,7 +107,7 @@ $(document).ready(function(){initNavTree('md_CONTRIBUTING.html',''); initResizab
 </ul>
 <h1>Pull Requests</h1>
 <ul>
-<li>Search <a href="https://github.com/JSC-electronics/Ticker/pulls?q=">existing pull requests</a> to see if one has already been submitted for this change. Search the <a href="https://github.com/JSC-electronics/Ticker/issues?q=is%3Aissue">issues</a> to see if there has been a discussion on this topic and whether your pull request can close any issues.</li>
+<li>Search <a href="https://github.com/JSC-TechMinds/Ticker/pulls?q=">existing pull requests</a> to see if one has already been submitted for this change. Search the <a href="https://github.com/JSC-TechMinds/Ticker/issues?q=is%3Aissue">issues</a> to see if there has been a discussion on this topic and whether your pull request can close any issues.</li>
 <li>Code formatting should be consistent with the style used in the existing code.</li>
 <li>Don't leave commented out code. A record of this code is already preserved in the commit history.</li>
 <li>All commits must be atomic. This means that the commit completely accomplishes a single task. Each commit should result in fully functional code. Multiple tasks should not be combined in a single commit, but a single task should not be split over multiple commits (e.g. one commit per file modified is not a good practice). For more information see <a href="http://www.freshconsulting.com/atomic-commits">http://www.freshconsulting.com/atomic-commits</a>.</li>
@@ -125,7 +125,7 @@ $(document).ready(function(){initNavTree('md_CONTRIBUTING.html',''); initResizab
 <li>Rebasing pull requests is OK and encouraged. After submitting your pull request some changes may be requested. Rather than adding unnecessary extra commits to the pull request, you can squash these changes into the existing commit and then do a force push to your fork. When you do a force push to your fork, the PR will be updated with your new changes, so there is no need to open a new PR to make changes. Leave a comment on the pull request thread to explain that the history has been changed. This will help to keep the commit history of the repository clean.</li>
 <li>Make sure your change does not break existing unit tests (see below for more details).</li>
 <li>After your pull request is merged please update the documentation if the changes require it:<ul>
-<li>Edit appropriate <a href="https://github.com/JSC-electronics/Ticker/wiki">Wiki pages</a>.</li>
+<li>Edit appropriate <a href="https://github.com/JSC-TechMinds/Ticker/wiki">Wiki pages</a>.</li>
 </ul>
 </li>
 </ul>
@@ -138,7 +138,7 @@ $(document).ready(function(){initNavTree('md_CONTRIBUTING.html',''); initResizab
 <li>Bundler gem (install with <code>gem install bundler</code>)</li>
 </ul>
 <h2>Setup</h2>
-<p>Clone Ticker git repository: </p><div class="fragment"><div class="line">git clone git@github.com:JSC-electronics/Ticker.git</div>
+<p>Clone Ticker git repository: </p><div class="fragment"><div class="line">git clone git@github.com:JSC-TechMinds/Ticker.git</div>
 </div><!-- fragment --><p>Install Ruby dependencies: </p><div class="fragment"><div class="line">bundle install</div>
 </div><!-- fragment --><p>Run automated tests: </p><div class="fragment"><div class="line">bundle exec arduino_ci_remote.rb</div>
 </div><!-- fragment --><p>Please check full <a href="https://github.com/ianfixes/arduino_ci/blob/master/REFERENCE.md">reference</a> for more options, including running only selected tests. </p>
